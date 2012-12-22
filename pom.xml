@@ -8,5 +8,29 @@
     <artifactId>geotracker</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+	<repositories>
+		<repository>
+			<id>mvnrepository</id>
+			<url>http://mvnrepository.com</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.2.0.RELEASE</version>
+		</dependency>
+	</dependencies>
+
 </project>
