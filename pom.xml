@@ -10,8 +10,14 @@
 	<url>http://github.com/bleege/GeoTracker</url>
 
 	<repositories>
+        <repository>
+            <id>spring-milestone</id>
+            <name>Spring Maven MILESTONE Repository</name>
+            <url>http://repo.springsource.org/libs-milestone</url>
+        </repository>
 		<repository>
 			<id>mvnrepository</id>
+            <name>MVNRepository.com</name>
 			<url>http://mvnrepository.com</url>
 		</repository>
 	</repositories>
