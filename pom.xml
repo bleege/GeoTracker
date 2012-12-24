@@ -15,11 +15,6 @@
             <name>Spring Maven MILESTONE Repository</name>
             <url>http://repo.springsource.org/libs-milestone</url>
         </repository>
-		<repository>
-			<id>mvnrepository</id>
-            <name>MVNRepository.com</name>
-			<url>http://mvnrepository.com</url>
-		</repository>
 	</repositories>
 
 	<dependencies>
@@ -36,12 +31,12 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>3.1.2.RELEASE</version>
+			<version>3.2.0.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-mongodb</artifactId>
-			<version>1.0.4.RELEASE</version>
+			<version>1.1.1.RELEASE</version>
 		</dependency>
 	</dependencies>
 
