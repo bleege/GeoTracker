@@ -9,7 +9,7 @@ import java.util.List;
 import com.bradleege.geotracker.data.Track;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,12 +18,12 @@ import org.springframework.web.bind.annotation.*;
 public class TrackService
 {
 	@Autowired
-	@Qualifier("tracksMongoOperations")
-	public MongoOperations mongoOperations;
+	@Qualifier("mongoTemplate")
+	public MongoTemplate mongoTemplate;
 
 	@RequestMapping(value = "/get", method = RequestMethod.GET, produces = "application/json")
 	public @ResponseBody List<Track> getAll() throws Exception
 	{
-		return mongoOperations.findAll(Track.class);
+		return mongoTemplate.findAll(Track.class);
 	}
 }
