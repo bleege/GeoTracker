@@ -5,8 +5,10 @@
 
 package com.bradleege.geotracker.data;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 
+@XStreamAlias("position")
 public class Position implements Serializable
 {
 	private Double latitude;

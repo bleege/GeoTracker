@@ -5,9 +5,11 @@
 
 package com.bradleege.geotracker.data;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import java.io.Serializable;
 import java.util.List;
 
+@XStreamAlias("track")
 public class Track implements Serializable
 {
 	private String id;

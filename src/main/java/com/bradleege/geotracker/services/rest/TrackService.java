@@ -25,7 +25,7 @@ public class TrackService
 	@Qualifier("mongoTemplate")
 	public MongoTemplate mongoTemplate;
 
-	@RequestMapping(value = "/get", method = RequestMethod.GET, produces = "application/json")
+	@RequestMapping(value = "/get", method = RequestMethod.GET)
 	public @ResponseBody List<Track> getAll() throws Exception
 	{
         logger.info("/track/get called...");
